@@ -2,16 +2,17 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
 
-	get "/hello" do
+	get '/date' do
+		erb :date
+	end
+
+	get '/hello' do
 		erb :hello
 	end
 
-	get "/goodbye" do
+	get '/goodbye' do
 		erb :goodbye
 	end
 
-	get "/date" do
-		erb :date
-	end
 
 end
