@@ -5,9 +5,7 @@ class App < Sinatra::Base
 	get '/date' do
 		erb :date
 	end
-	get '/' do
-    "Hello World"
-  end
+
 	get '/hello' do
 		erb :hello
 	end
